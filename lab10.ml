@@ -338,20 +338,20 @@ type complexity =
 let exercise9a () : complexity list =
   failwith "exercise9a not implemented" ;;
   
-(* f(x) = 50n^100 + x^2 *)
+(* f(x) = 50x^100 + x^2 *)
 let exercise9b () : complexity list =
   failwith "exercise9b not implemented" ;;
 
-(* f(x) = 30nlog(n) + 50n + 70 *)
+(* f(x) = 30xlog(x) + 50x + 70 *)
 
 let exercise9c () : complexity list =
   failwith "exercise9c not implemented" ;;
 
-(* f(x) = 30n^2 * log(n) *)
+(* f(x) = 30x^2 * log(x) *)
 let exercise9d () : complexity list =
   failwith "exercise9d not implemented" ;;
 
-(* f(x) = n + 60log(n) *)
+(* f(x) = x + 60log(x) *)
 let exercise9e () : complexity list =
   failwith "exercise9e not implemented" ;;
 
@@ -622,7 +622,22 @@ let time_multiply (mult : int -> int -> int)
 
 (*......................................................................
 Exercise 14: Fill in the table below:
-
+....................................................................*)
+(*......................................................................
+                       |    15 * 50           |  1241342345 *
+                       |                      |  3237461243
+                       |    Time (seconds)    |  Time (seconds)
+-----------------------------------------------------------------
+Repeated Addition      |                      |
+-----------------------------------------------------------------
+Grade School Algorithm |                      |
+-----------------------------------------------------------------
+Karatsuba              |                      |
+-----------------------------------------------------------------
+OCaml Native ( * )     |                      |
+-----------------------------------------------------------------
+....................................................................*)
+(*......................................................................
 Questions to consider:
 1) Which algorithm above was easiest to understand?
 2) Which algorithm was likely easiest to code?
