@@ -187,7 +187,7 @@ let exercise5c () : complexity list=
 let exercise5d () : complexity list =
   failwith "exercise5d not implemented" ;;
 
-(* f(x) = x (x2 + x) *)
+(* f(x) = x (x^2 + x) *)
 let exercise5e () : complexity list =
   failwith "exercise5e not implemented" ;;
 
@@ -622,33 +622,6 @@ let time_multiply (mult : int -> int -> int)
 
 (*......................................................................
 Exercise 14: Fill in the table below:
-#ifndef SOLN
-                       |    15 * 50           |  1241342345 *
-                       |                      |  3237461243
-                       |    Time (seconds)    |  Time (seconds)
------------------------------------------------------------------
-Repeated Addition      |                      |
------------------------------------------------------------------
-Grade School Algorithm |                      |
------------------------------------------------------------------
-Karatsuba              |                      |
------------------------------------------------------------------
-OCaml Native ( * )     |                      |
------------------------------------------------------------------
-#else
-                       |    15 * 50           |  1241342345 *
-                       |                      |  3237461243
-                       |    Time (seconds)    |  Time (seconds)
------------------------------------------------------------------
-Repeated Addition      |     0.00000286       |  83.5
------------------------------------------------------------------
-Grade School Algorithm |     0.00000310       |  0.0000129
------------------------------------------------------------------
-Karatsuba              |     0.00000787       |  0.0000281
------------------------------------------------------------------
-OCaml Native ( * )     |     0.00000119       |  ~0
------------------------------------------------------------------
-#endif
 
 Questions to consider:
 1) Which algorithm above was easiest to understand?
