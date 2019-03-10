@@ -525,8 +525,8 @@ let rec find_min (xs : int list) : int =
          min (find_min l1) (find_min l2) ;;
 
 let time_split (n : int) : int =
-  if n = 0 || n = 1 then 
-  else k + time_split ( n - 2) ;;
+  if n = 0 || n = 1 then k
+  else k + time_split (n - 2) ;;
 
 let split_complexity () : complexity =
   Linear ;;
