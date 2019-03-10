@@ -345,7 +345,7 @@ let exercise9a () : complexity list =
   
 (* f(x) = 50x^100 + x^2 *)
 let exercise9b () : complexity list =
-  [Exponential]] ;;
+  [Exponential] ;;
 
 (* f(x) = 30xlog(x) + 50x + 70 *)
 
