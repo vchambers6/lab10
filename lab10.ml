@@ -627,7 +627,7 @@ let time_multiply (mult : int -> int -> int)
                   (x : int)
                   (y : int)
                 : float =
-  let _, time = call_timed (fun (x, y) -> mult x y) (x,y) in time ;;
+  let _, time = CS51.call_timed (fun (x, y) -> mult x y) (x,y) in time ;;
 
 (*......................................................................
 Exercise 14: Fill in the table below:
