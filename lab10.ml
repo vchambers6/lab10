@@ -358,7 +358,7 @@ let exercise9d () : complexity list =
 
 (* f(x) = x + 60log(x) *)
 let exercise9e () : complexity list =
-  [Linear; Loglinear; Quadratic; Cubic; Exponential] ;;
+  [Linear; LogLinear; Quadratic; Cubic; Exponential] ;;
 
 (*======================================================================
 Part 3: Recurrence Equations
