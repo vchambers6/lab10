@@ -473,7 +473,7 @@ let rec sum (x : int list) : int =
 
 (* Describe the time complexity recurrence equations for sum as an
 ocaml function *)
-let time_sum (n : int) : int =
+let rec time_sum (n : int) : int =
   if n = 0 then k 
   else k + time_sum (n - 1) ;;
 
@@ -524,14 +524,14 @@ let rec find_min (xs : int list) : int =
   | _ -> let l1, l2 = split xs in
          min (find_min l1) (find_min l2) ;;
 
-let time_split (n : int) : int =
+let rec time_split (n : int) : int =
   if n = 0 || n = 1 then k
   else k + time_split (n - 2) ;;
 
 let split_complexity () : complexity =
   Linear ;;
 
-let time_find_min (n : int) : int =
+let rec time_find_min (n : int) : int =
   if n = 0 || n = 1 then k 
   else (time_split n) + 2 * time_find_min (n/2) ;;
 
