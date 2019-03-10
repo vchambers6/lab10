@@ -526,7 +526,7 @@ let rec find_min (xs : int list) : int =
 
 let time_split (n : int) : int =
   if n = 0 || n = 1 then 
-  else k + time_split (n-2) ;;
+  else k + time_split ( n - 2) ;;
 
 let split_complexity () : complexity =
   Linear ;;
